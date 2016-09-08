@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import {Component, OnInit, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'app works!';
+export class AppComponent implements OnInit, OnDestroy {
+  sub: any;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  ngOnDestroy(){
+    this.sub.unsubscribe();
+  }
 }
