@@ -14,8 +14,28 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "mobile": false,
-      "styles": [],
-      "scripts": [],
+      "styles": [
+        "assets/CSS/font-awesome.min.css",
+        "assets/CSS/bootstrap/bootstrap.min.css",
+        "assets/CSS/jquery/flexslider.css",
+        "assets/CSS/animate/animate.css",
+        "assets/CSS/black.background.css",
+        "assets/CSS/red.color.css",
+        "assets/CSS/tether/tether.min.css",
+        "assets/CSS/style.css"
+      ],
+      "scripts": [
+        "assets/JS/jquery.min.js",
+        "assets/JS/tether.min.js",
+        "assets/JS/modernizr.custom.js",
+        "assets/JS/jquery.countTo.js",
+        "assets/JS/jquery.gridrotator.js",
+        "assets/JS/jquery.flexslider-min.js",
+        "assets/JS/baron.js",
+        "assets/JS/masonry.pkgd.min.js",
+        "assets/JS/custom.script.js",
+        "assets/JS/bootstrap/bootstrap.min.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "prod": "environments/environment.prod.ts",

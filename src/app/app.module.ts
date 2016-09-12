@@ -12,6 +12,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { appRoutingProviders, routing } from "./app.routing";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { appRoutingProviders, routing } from "./app.routing";
     BrowserModule,
     FormsModule,
     HttpModule,
+    RouterModule,
     routing
   ],
   providers: [appRoutingProviders],
