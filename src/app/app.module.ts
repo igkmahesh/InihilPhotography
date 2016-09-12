@@ -13,6 +13,7 @@ import { ServicesComponent } from './services/services.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { appRoutingProviders, routing } from "./app.routing";
 import { RouterModule } from "@angular/router";
+import { SocialTwitterComponent } from './social-twitter/social-twitter.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RouterModule } from "@angular/router";
     ContactComponent,
     PortfolioComponent,
     ServicesComponent,
-    NavigationComponent
+    NavigationComponent,
+    SocialTwitterComponent
   ],
   imports: [
     BrowserModule,
