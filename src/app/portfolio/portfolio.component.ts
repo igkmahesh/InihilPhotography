@@ -14,5 +14,4 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     jQuery.getScript("../../assets/JS/custom.script.js");
   }
-
 }

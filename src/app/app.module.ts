@@ -6,26 +6,38 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { appRoutingProviders, routing } from "./app.routing";
 import { RouterModule } from "@angular/router";
-import { NavigationModule } from "./navigation/navigation.module";
-import {HomeComponent} from "./home/home.component";
-import {AboutModule} from "./about/about.module";
-import {NavigationComponent} from "./navigation/navigation.component";
+import { HomeComponent } from "./home/home.component";
+import { NavigationComponent } from "./navigation/navigation.component";
+import { SocialTwitterComponent } from "./social-twitter/social-twitter.component";
+import { AboutComponent } from "./about/about.component";
+import { BlogComponent } from "./blog/blog.component";
+import { ContactComponent } from "./contact/contact.component";
+import { PortfolioComponent } from "./portfolio/portfolio.component";
+import { ServicesComponent } from "./services/services.component";
+import { PortfoliodetailComponent } from "./portfoliodetail/portfoliodetail.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavigationComponent
+    NavigationComponent,
+    AboutComponent,
+    BlogComponent,
+    ContactComponent,
+    PortfolioComponent,
+    ServicesComponent,
+    PortfoliodetailComponent,
+    SocialTwitterComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule,
-    AboutModule,
     routing
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
